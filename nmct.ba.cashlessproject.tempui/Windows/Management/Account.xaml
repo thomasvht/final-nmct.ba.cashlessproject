@@ -1,0 +1,41 @@
+﻿<Window x:Class="BusinessApp_Project.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Account" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Button x:Name="btnAccount" Style="{StaticResource ButtonStyle}">Account</Button>
+        <Button Grid.Column="1" x:Name="btnProducten" Style="{StaticResource ButtonStyle}">Producten</Button>
+        <Button Grid.Column="2" x:Name="btnMedewerkers" Style="{StaticResource ButtonStyle}">Medewerkers</Button>
+        <Button Grid.Column="3" x:Name="btnKassas" Style="{StaticResource ButtonStyle}">Kassas</Button>
+        <Button Grid.Column="4" x:Name="btnKlanten" Style="{StaticResource ButtonStyle}">Klanten</Button>
+        <Button Grid.Column="5" x:Name="btnStatistieken" Style="{StaticResource ButtonStyle}">Statistieken</Button>
+        <Button Grid.Column="7" x:Name="btnAfmelden" Style="{StaticResource ButtonStyle}">Afmelden</Button>
+        <Label Grid.Row="1" Grid.Column="6" Style="{StaticResource LabelGebruikersnaam}">-Gebruikersnaam-</Label>
+        <Label Grid.Row="3" Style="{StaticResource LabelStyleIngelogd}">Huidig paswoord:</Label>
+        <Label Grid.Row="4" Style="{StaticResource LabelStyleIngelogd}">Nieuw paswoord:</Label>
+        <Label Grid.Row="5" Style="{StaticResource LabelStyleIngelogd}">Bevestig paswoord:</Label>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtHuidigPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtNieuwPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtBevestigPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <Button Grid.Row="7" Grid.Column="5" Grid.ColumnSpan="2" x:Name="btnWijzigPaswoord" Style="{StaticResource ButtonStyle}">Wijzig paswoord</Button>
+    </Grid>
+</Window>

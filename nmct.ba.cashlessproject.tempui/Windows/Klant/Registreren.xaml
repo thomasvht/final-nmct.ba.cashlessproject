@@ -1,0 +1,39 @@
+﻿<Window x:Class="BusinessApp_Project.Windows.Klant.Registreren"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                Title="Registreren" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="180"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="180"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblRegisteren" Grid.Row="1" Grid.ColumnSpan="4" Style="{StaticResource LabelStyleTitel}">Registreren met identiteitskaart</Label>
+        <Image x:Name="imgIdentiteitskaart" Grid.RowSpan="3" Grid.Row="2" Style="{StaticResource ImageStyle}"/>
+        <Label x:Name="lblVoornaam" Grid.Row="2" Grid.Column="1" Style="{StaticResource LabelStyleLogin}">Voornaam:</Label>
+        <TextBlock x:Name="txbVoornaam" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource TextBlockDetailStyle}" Text="-voornaam-"/>
+        <Label x:Name="lblNaam" Grid.Row="3" Grid.Column="1" Style="{StaticResource LabelStyleLogin}">Naam:</Label>
+        <TextBlock x:Name="txbNaam" Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource TextBlockDetailStyle}" Text="-naam-"/>
+        <Label x:Name="lblStraat" Grid.Row="4" Grid.Column="1" Style="{StaticResource LabelStyleLogin}">Straat:</Label>
+        <TextBlock x:Name="txbStraat" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource TextBlockDetailStyle}" Text="-straat-"/>
+        <Label x:Name="lblStad" Grid.Row="5" Grid.Column="1" Style="{StaticResource LabelStyleLogin}">Stad:</Label>
+        <TextBlock x:Name="txbStad" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Style="{StaticResource TextBlockDetailStyle}" Text="-stad-"/>
+        <Button x:Name="btnOKRegisteren" Grid.Row="7" Grid.Column="3" Style="{StaticResource ButtonStyle}">OK</Button>
+        <Label x:Name="lblLogin" Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  Grid.ColumnSpan="2" Style="{StaticResource LabelStyleLoginKlant}">LOG IN MET JE KAART</Label>
+        <Label x:Name="lblLoginGelukt" Grid.Row="1" Grid.Column="4" Grid.RowSpan="4"  Grid.ColumnSpan="2" Style="{StaticResource LabelStyleLoginKlant}" Visibility="Hidden">INGELOGD MET JE KAART</Label>
+        <Button x:Name="btnOKAanmelden" Grid.Row="7" Grid.Column="5" Style="{StaticResource ButtonStyle}">OK</Button>
+    </Grid>
+</Window>

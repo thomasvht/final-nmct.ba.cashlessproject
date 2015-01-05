@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="nmct.ba.project.ui.View.ITBedrijf.Logging.Logboek"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid Margin="0,0,-297,-73">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txbLogboek" Height="55" Margin="10.5,10,9.5,308" TextWrapping="Wrap" Text="Logboek" Grid.Column="1" FontSize="36" FontWeight="Bold" TextAlignment="Center"/>
+        <ListBox x:Name="lstLogboek" Grid.Column="1" HorizontalAlignment="Left" Height="242" Margin="10,70,0,0" VerticalAlignment="Top" Width="292"/>
+        <ComboBox x:Name="cboKassa2" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="10,70,0,0" VerticalAlignment="Top" Width="84" />
+        <ComboBox x:Name="cboVereniging" Grid.Column="2" HorizontalAlignment="Left" Height="29" Margin="10,116,0,0" VerticalAlignment="Top" Width="84"/>
+
+    </Grid>
+</UserControl>

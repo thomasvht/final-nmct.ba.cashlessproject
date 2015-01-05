@@ -1,0 +1,62 @@
+﻿<Window x:Class="BusinessApp_Project.Windows.Management.Medewerkers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Medewerkers" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Button x:Name="btnAccount" Style="{StaticResource ButtonStyle}">Account</Button>
+        <Button Grid.Column="1" x:Name="btnProducten" Style="{StaticResource ButtonStyle}">Producten</Button>
+        <Button Grid.Column="2" x:Name="btnMedewerkers" Style="{StaticResource ButtonStyle}">Medewerkers</Button>
+        <Button Grid.Column="3" x:Name="btnKassas" Style="{StaticResource ButtonStyle}">Kassas</Button>
+        <Button Grid.Column="4" x:Name="btnKlanten" Style="{StaticResource ButtonStyle}">Klanten</Button>
+        <Button Grid.Column="5" x:Name="btnStatistieken" Style="{StaticResource ButtonStyle}">Statistieken</Button>
+        <Button Grid.Column="7" x:Name="btnAfmelden" Style="{StaticResource ButtonStyle}">Afmelden</Button>
+        <Label Grid.Row="1" Grid.Column="7" x:Name="lblGebruikersnaam" Style="{StaticResource LabelGebruikersnaam}" Margin="0,2,5,2">-Gebruikersnaam-</Label>
+        <ListView x:Name="lstMedewerkers" Grid.Row="3" Grid.RowSpan="5" Grid.ColumnSpan="2" Style="{StaticResource ListboxStyleLinks}">
+            <ListView.View>
+                <GridView x:Name="grdMedewerkers">
+                    <GridViewColumn Header="Gebruikersnaam" HeaderContainerStyle="{StaticResource ListGridViewColumnHeaderStyle}" />
+                    <GridViewColumn Header="Voornaam"  HeaderContainerStyle="{StaticResource ListGridViewColumnHeaderStyle}"/>
+                    <GridViewColumn Header="Naam"  HeaderContainerStyle="{StaticResource ListGridViewColumnHeaderStyle}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="btnToevoegen" Style="{StaticResource ButtonStyleMidden}">Toevoegen</Button>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="btnWijzigen" Style="{StaticResource ButtonStyleMidden}">Wijzigen</Button>
+        <Button Grid.Row="5" Grid.Column="3" x:Name="btnVerwijderen" Style="{StaticResource ButtonStyleMidden}">Verwijderen</Button>
+        <StackPanel Grid.Row="3" Grid.Column="5" Grid.RowSpan="4" Grid.ColumnSpan="3" Style="{StaticResource StackPanelStyle}">
+            <Label Style="{StaticResource LabelStyleIngelogd}">Gebruikersnaam:</Label>
+            <TextBox x:Name="txtGebruikersnaam" Style="{StaticResource TextboxStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Voornaam:</Label>
+            <TextBox x:Name="txtVoornaam" Style="{StaticResource TextboxStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Naam:</Label>
+            <TextBox x:Name="txtNaam" Style="{StaticResource TextboxStyle}"/>
+            <Label Visibility="Collapsed" Style="{StaticResource LabelStyleIngelogd}">Oud Paswoord:</Label>
+            <TextBox x:Name="txtOudPaswoord" Visibility="Collapsed" Style="{StaticResource TextboxStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Nieuw Paswoord:</Label>
+            <TextBox x:Name="txtNieuwPaswoord" Style="{StaticResource TextboxStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Bevestig Paswoord:</Label>
+            <TextBox x:Name="txtBevestigPaswoord" Style="{StaticResource TextboxStyle}"/>
+        </StackPanel>
+        <Button x:Name="btnAnnuleer" Grid.Row="7" Grid.Column="5" Style="{StaticResource ButtonStyle}">Annuleer</Button>
+        <Button x:Name="btnOK" Grid.Row="7" Grid.Column="6" Style="{StaticResource ButtonStyle}">OK</Button>
+    </Grid>
+</Window>

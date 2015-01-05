@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="BusinessApp_Project.UserControls.AccountUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Style="{StaticResource LabelStyleIngelogd}">Huidig paswoord:</Label>
+        <Label Grid.Row="2" Style="{StaticResource LabelStyleIngelogd}">Nieuw paswoord:</Label>
+        <Label Grid.Row="3" Style="{StaticResource LabelStyleIngelogd}">Bevestig paswoord:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtHuidigPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtNieuwPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" x:Name="txtBevestigPaswoord" Style="{StaticResource TextboxStyle}"/>
+        <Button Grid.Row="5" Grid.Column="5" Grid.ColumnSpan="2" x:Name="btnWijzigPaswoord" Style="{StaticResource ButtonStyle}">Wijzig paswoord</Button>
+    </Grid>
+</UserControl>

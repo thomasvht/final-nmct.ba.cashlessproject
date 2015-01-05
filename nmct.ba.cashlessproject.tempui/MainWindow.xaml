@@ -1,0 +1,25 @@
+﻿<Window x:Class="nmct.ba.cashlessproject.tempui.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="640" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.ColumnSpan="2" Text="Aanmelden" Style="{StaticResource TextBlockTitleStyle}"/>
+        <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource LabelStyleLogin}">GebruikerID:</Label>
+        <Label Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Style="{StaticResource LabelStyleLogin}">Paswoord:</Label>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="txtGebruikerID" Style="{StaticResource TextboxStyle}" />
+        <TextBox Grid.Row="2" Grid.Column="2" x:Name="txtPaswoord" Style="{StaticResource TextboxStyle}" />
+        <Button Grid.Row="3" Grid.Column="2" x:Name="btnAanmelden" Style="{StaticResource ButtonStyle}">Aanmelden</Button>
+    </Grid>
+</Window>

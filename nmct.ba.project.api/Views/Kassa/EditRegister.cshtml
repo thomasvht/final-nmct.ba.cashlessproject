@@ -1,0 +1,32 @@
+﻿@model ITBedrijfProject.PresentationModels.PMOrganisationRegister
+<h2>@ViewBag.Organisation.OrganisationName</h2>
+<h3>Edit register</h3>
+@using (Html.BeginForm("EditRegister", "Kassa", FormMethod.Post))
+{
+    <input type="hidden" name="oldKassaID" id="oldKassaID" value="@ViewBag.oldId" />
+    @Html.HiddenFor(a => a.RegisterID)
+    @Html.HiddenFor(a => a.FromDate)
+    @Html.HiddenFor(a => a.UntilDate)
+    <table>
+        <tr>
+            <td width="200px">@Html.LabelFor(a => a.RegisterName)</td>
+            <td width="200px">@Html.LabelFor(a => a.Device)</td>
+        </tr>
+        @foreach (var item in @ViewBag.Registers)
+        {
+            <tr>
+                <td>@item.RegisterName</td>
+                <td>@item.Device</td>
+            </tr>
+        }
+        <tr>
+            <td>
+                <a href="/Kassa/Index">
+                    <input type="button" value="Back" />
+                </a>
+            </td>
+            <td><input type="submit" value="Save" /></td>
+        
+        </tr>
+    </table>
+}

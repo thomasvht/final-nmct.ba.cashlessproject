@@ -1,0 +1,28 @@
+﻿@model ITBedrijfProject.Models.Register
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registers</h2>
+<p><a href="/Kassa/NewRegister">Nieuwe kassa</a></p>
+<table>
+    <tr>
+        <td width="200px">@Html.LabelFor(a => a.RegisterName)</td>
+        <td width="200px">@Html.LabelFor(a => a.Device)</td>
+        <td width="200px">@Html.LabelFor(a => a.PurchaseDate)</td>
+        <td width="200px">@Html.LabelFor(a => a.ExpiresDate)</td>
+    </tr>
+
+    @foreach (var item in @ViewBag.Registers)
+    {
+        <tr>
+            <td>@item.RegisterName</td>
+            <td>@item.Device</td>
+            <td>@item.PurchaseDate</td>
+            <td>@item.ExpiresDate</td>
+            <td><a href="/Kassa/Details?id=@item.Id">Details</a> | <a href="/Kassa/EditRegister?id=@item.Id">Edit</a> | <a href="/Kassa/Logs?id=@item.Id">Logs</a> | <a href="/Kassa/Delete?id=@item.Id">Delete</a>
+        </tr>
+    }
+
+</table>

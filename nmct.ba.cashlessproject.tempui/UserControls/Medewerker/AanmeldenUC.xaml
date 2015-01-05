@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="BusinessApp_Project.UserControls.Klant.AanmeldenUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="440" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="180" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txbKlant" Text="Klant" Style="{StaticResource TextBlockTitleStyle}"/>
+        <Grid Grid.Row="1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Image x:Name="imgKlant" Grid.RowSpan="3" Style="{StaticResource ImageStyle}"/>
+            <TextBlock Text="-Naam-" x:Name="txbNaam" Grid.Column="1" Style="{StaticResource TextBlockDetailStyle}" />
+            <TextBlock Text="-Voornaam-" x:Name="txbVoornaam" Grid.Column="1" Grid.Row="1" Style="{StaticResource TextBlockDetailStyle}" />
+            <TextBlock Text="-Saldo-" x:Name="txbSaldo" Grid.Column="1" Grid.Row="2" Style="{StaticResource TextBlockDetailStyle}" />
+        </Grid>
+        <TextBlock x:Name="txbAanmelden" Grid.Column="2" Grid.ColumnSpan="2" Text="Aanmelden" Style="{StaticResource TextBlockTitleStyle}"/>
+        <Label Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Style="{StaticResource LabelStyleLogin}">GebruikerID:</Label>
+        <TextBox Grid.Row="1" Grid.Column="3" x:Name="txtGebruikerID" Style="{StaticResource TextboxStyle}" />
+        <Grid Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="3" Grid.Column="2" x:Name="btnWissen" Style="{StaticResource ButtonStyle}">Wissen</Button>
+            <Button Grid.Row="3" Grid.Column="1" x:Name="btnNul" Style="{StaticResource ButtonStyle}">0</Button>
+            <Button Grid.Row="2" x:Name="btnEen" Style="{StaticResource ButtonStyle}">1</Button>
+            <Button Grid.Row="2" Grid.Column="1" x:Name="btnTwee" Style="{StaticResource ButtonStyle}">2</Button>
+            <Button Grid.Row="2" Grid.Column="2" x:Name="btnDrie" Style="{StaticResource ButtonStyle}">3</Button>
+            <Button Grid.Row="1" x:Name="btnVier" Style="{StaticResource ButtonStyle}">4</Button>
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnVijf" Style="{StaticResource ButtonStyle}">5</Button>
+            <Button Grid.Row="1" Grid.Column="2" x:Name="btnZes" Style="{StaticResource ButtonStyle}">6</Button>
+            <Button x:Name="btnZeven" Style="{StaticResource ButtonStyle}">7</Button>
+            <Button Grid.Column="1" x:Name="btnAcht" Style="{StaticResource ButtonStyle}">8</Button>
+            <Button Grid.Column="2" x:Name="btnNegen" Style="{StaticResource ButtonStyle}">9</Button>
+        </Grid>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="btnAanmelden" Style="{StaticResource ButtonStyle}">Aanmelden</Button>
+    </Grid>
+</UserControl>

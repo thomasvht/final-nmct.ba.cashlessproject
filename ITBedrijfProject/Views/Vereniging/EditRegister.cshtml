@@ -1,0 +1,26 @@
+﻿@model ITBedrijfProject.PresentationModels.PMOrganisationRegister
+<h2>@ViewBag.Organisation.OrganisationName</h2>
+<h3>Edit register</h3>
+@using (Html.BeginForm("EditRegister", "Vereniging", FormMethod.Post))
+{
+    <input type="hidden" name="oldOrganisationID" id="oldOrganisationID" value="@ViewBag.oldId" />
+    @Html.HiddenFor(a => a.RegisterID)
+    @Html.HiddenFor(a => a.FromDate)
+    @Html.HiddenFor(a => a.UntilDate)
+    <table>
+        <tr>
+            <td>@Html.LabelFor(a => a.OrganisationName)</td>
+            <td>@Html.DropDownListFor(a => a.OrganisationID, Model.NewOrganisation)</td>
+            <td>@Html.ValidationMessageFor(a => a.OrganisationID)</td>
+        </tr>
+        <tr>
+            <td>
+                <a href="/Vereniging/Index">
+                    <input type="button" value="Back" />
+                </a>
+            </td>
+            <td><input type="submit" value="Save" /></td>
+
+        </tr>
+    </table>
+}

@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="BusinessApp_Project.UserControls.Management.KlantenUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="70" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource LabelStyleTitel}">Overzicht klanten:</Label>
+        <ListView x:Name="lstKlanten" Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="2" Style="{StaticResource ListboxStyleMetTitelLinks}">
+        </ListView>
+        <Label  Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="3" Style="{StaticResource LabelStyleTitel}">Details klant:</Label>
+        <StackPanel Grid.Row="1" Grid.Column="4" Grid.RowSpan="4" Grid.ColumnSpan="3" Style="{StaticResource StackPanelStyleMetTitel}">
+            <Label Style="{StaticResource LabelStyleIngelogd}">Voornaam:</Label>
+            <TextBlock x:Name="txbVoornaam" Text="-voornaam-" Style="{StaticResource TextBlockDetailStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Naam:</Label>
+            <TextBlock x:Name="txbNaam" Text="-naam-" Style="{StaticResource TextBlockDetailStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Straat:</Label>
+            <TextBlock x:Name="txbStraat" Text="-straat-" Style="{StaticResource TextBlockDetailStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Stad:</Label>
+            <TextBlock x:Name="txbStad" Text="-stad-" Style="{StaticResource TextBlockDetailStyle}"/>
+            <Label Style="{StaticResource LabelStyleIngelogd}">Saldo:</Label>
+            <TextBlock x:Name="txbSaldo" Text="-saldo-" Style="{StaticResource TextBlockDetailStyle}"/>
+            <TextBox x:Name="txtSaldo" Visibility="Collapsed" Text="-saldo-" Style="{StaticResource TextboxStyle}"/>
+        </StackPanel>
+        <Button x:Name="btnWijzigSaldo" Grid.Row="5" Grid.Column="6" Style="{StaticResource ButtonStyle}">Wijzig saldo</Button>
+        <Button x:Name="btnAnnuleer" Visibility="Collapsed" Grid.Row="5" Grid.Column="5" Style="{StaticResource ButtonStyle}">Annuleer</Button>
+        <Button x:Name="btnOK" Visibility="Collapsed" Grid.Row="5" Grid.Column="6" Style="{StaticResource ButtonStyle}">OK</Button>
+    </Grid>
+</UserControl>

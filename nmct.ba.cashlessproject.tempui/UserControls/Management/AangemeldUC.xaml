@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="BusinessApp_Project.Aangemeld"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="1280">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button x:Name="btnAccount" Style="{StaticResource ButtonStyle}">Account</Button>
+        <Button Grid.Column="1" x:Name="btnProducten" Style="{StaticResource ButtonStyle}">Producten</Button>
+        <Button Grid.Column="2" x:Name="btnMedewerkers" Style="{StaticResource ButtonStyle}">Medewerkers</Button>
+        <Button Grid.Column="3" x:Name="btnKassas" Style="{StaticResource ButtonStyle}">Kassas</Button>
+        <Button Grid.Column="4" x:Name="btnKlanten" Style="{StaticResource ButtonStyle}">Klanten</Button>
+        <Button Grid.Column="5" x:Name="btnStatistieken" Style="{StaticResource ButtonStyle}">Statistieken</Button>
+        <Button Grid.Column="7" x:Name="btnAfmelden" Style="{StaticResource ButtonStyle}">Afmelden</Button>
+        <Label Grid.Row="1" Grid.Column="6" Style="{StaticResource LabelGebruikersnaam}">-Gebruikersnaam-</Label>
+    </Grid>
+</UserControl>

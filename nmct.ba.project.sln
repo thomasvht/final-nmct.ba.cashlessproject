@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.project.api", "nmct.ba.project.api\nmct.ba.project.api.csproj", "{C0FFE6DE-A59D-4DB5-AFE6-0B56755C5664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.project.model", "nmct.ba.project.model\nmct.ba.project.model.csproj", "{7C6C5D08-7F48-4012-BDE3-C2D4DE6603F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITBedrijfProject", "C:\Downloads\ITBedrijfProject backup\ITBedrijfProject\ITBedrijfProject.csproj", "{8B553613-ACB6-43C3-95CA-79DD7601557D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.model", "C:\Downloads\nmct.ba.cashlessproject-master\nmct.ba.cashlessproject\nmct.ba.cashlessproject.model\nmct.ba.cashlessproject.model.csproj", "{EFDED65C-5953-4D46-A5B8-0C103B59A3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.tempui", "C:\Downloads\nmct.ba.cashlessproject-master\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\nmct.ba.cashlessproject.tempui.csproj", "{1E956B0A-2F0F-430C-A411-E031F3E8B19E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nmct.ba.cashlessproject.uimanage", "C:\Downloads\NMCT.BA.CASHLESSPROJECT.GIT.REPOSITORY-master\nmct.ba.cashlessproject\nmct.ba.cashlessproject.uimanage\nmct.ba.cashlessproject.uimanage.csproj", "{4A2F3CAD-9A3E-4BAB-99C3-30941AE23466}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0FFE6DE-A59D-4DB5-AFE6-0B56755C5664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0FFE6DE-A59D-4DB5-AFE6-0B56755C5664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0FFE6DE-A59D-4DB5-AFE6-0B56755C5664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0FFE6DE-A59D-4DB5-AFE6-0B56755C5664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6C5D08-7F48-4012-BDE3-C2D4DE6603F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6C5D08-7F48-4012-BDE3-C2D4DE6603F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6C5D08-7F48-4012-BDE3-C2D4DE6603F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6C5D08-7F48-4012-BDE3-C2D4DE6603F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B553613-ACB6-43C3-95CA-79DD7601557D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B553613-ACB6-43C3-95CA-79DD7601557D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B553613-ACB6-43C3-95CA-79DD7601557D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B553613-ACB6-43C3-95CA-79DD7601557D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDED65C-5953-4D46-A5B8-0C103B59A3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDED65C-5953-4D46-A5B8-0C103B59A3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDED65C-5953-4D46-A5B8-0C103B59A3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDED65C-5953-4D46-A5B8-0C103B59A3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E956B0A-2F0F-430C-A411-E031F3E8B19E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E956B0A-2F0F-430C-A411-E031F3E8B19E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E956B0A-2F0F-430C-A411-E031F3E8B19E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E956B0A-2F0F-430C-A411-E031F3E8B19E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2F3CAD-9A3E-4BAB-99C3-30941AE23466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2F3CAD-9A3E-4BAB-99C3-30941AE23466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2F3CAD-9A3E-4BAB-99C3-30941AE23466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2F3CAD-9A3E-4BAB-99C3-30941AE23466}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
